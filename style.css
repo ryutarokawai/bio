@@ -151,13 +151,22 @@ a {
 */
 
 /* メディアクエリー */
-@media (max-width: 600px) {
-.title {
-    font-size: 400%;
-}
-    /* YouTube iframeの幅を調整 */
-    iframe {
-        width: 10%; /* 画面幅に合わせて幅を調整 */
-        height: auto; /* 高さは自動調整（アスペクト比を維持するためには別のアプローチが必要） */
+@media (max-width: 400px) {
+    .iframe-wrapper {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 45%; /* 16:9のアスペクト比 */
     }
+    
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+.title {
+    font-size: 400%:
 }
+
