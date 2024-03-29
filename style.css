@@ -152,13 +152,12 @@ a {
 
 /* メディアクエリー */
 @media (max-width: 600px) {
-    h1 {
-        color: #0bd;
-    }
-
+.title {
+    font-size: 400%;
+}
     /* YouTube iframeの幅を調整 */
     iframe {
-        width: 100%; /* 画面幅に合わせて幅を調整 */
+        width: 10%; /* 画面幅に合わせて幅を調整 */
         height: auto; /* 高さは自動調整（アスペクト比を維持するためには別のアプローチが必要） */
     }
 }
