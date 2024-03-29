@@ -152,21 +152,23 @@ a {
 
 /* メディアクエリー */
 @media (max-width: 400px) {
-    .iframe-wrapper {
-        position: relative;
-        width: 80%;
-        margin: 0 auto;
-        padding-top: 45%; /* 16:9のアスペクト比 */
+    /* YouTube iframeの幅を調整 */
+    .modal-content iframe {
+        width: 80%; /* 画面幅の70%に設定 */
+        /* アスペクト比を16:9で保持するためには高さも調整する */
+        height: calc(80% / (16 / 9));
     }
-    
-    iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-.title {
-    font-size:xx-large;
-}
 
+    /* モーダルコンテンツのサイズ調整 */
+    .modal-content {
+        width: 60%; /* 画面幅の70%に */
+        /* アスペクト比を維持するために高さも調整 */
+        height: auto; /* 高さを自動調整する場合 */
+        /* 中央配置のスタイルはそのままでOK */
+    }
+
+    /* タイトルのフォントサイズ調整（必要に応じて） */
+    .title {
+        font-size: 3rem; /* スマホサイズでのタイトルのフォントサイズを調整 */
+    }
+}
