@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Ryutaro Kawai</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/recycle-solid.svg" type="image/svg">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // モーダルウィンドウを取得
+            var modal = document.getElementById("modal");
+
+            // モーダルを表示するボタンを取得
+            var btn = document.getElementById("modalTrigger");
+
+            // モーダルを閉じるボタンを取得
+            var span = document.getElementsByClassName("close-button")[0];
+
+            // ユーザーがボタンをクリックしたときにモーダルを開く
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+
+            // ユーザーが<span> (x) をクリックしたときにモーダルを閉じる
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+
+            // ユーザーがモーダルの外側をクリックしたときにモーダルを閉じる
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+    }
+}
+
+        });
+        </script>
+    </head>
+
+	<body>
+        <div class="container">
+          <section class="area">
+              <h1 class="title">Ryutaro Kawai</h1>
+              <p>born in Japan.</p>
+              <a>a</a>
+              <p><a href="https://twitter.com/RyutaroKawai" target="_blank" class="link">X</a></p>
+          </section>
+          <section class="area">
+              <h1 class="title">Video</h1>
+              <!-- モーダルトリガー -->
+            <button id="modalTrigger">click here</button>
+            <!-- モーダルウィンドウ -->
+            <div id="modal" class="modal">
+            <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PTptXYF-pdI?si=KNUDRxRNQ7hVhMxu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            </div>
+          </section>
+          <section class="area">
+              <h1 class="title">I sometimes write.</h1>
+              <p><a href="https://medium.com/@ryutarokawai/sora-my-impression-8a78b592317c" target="_blank" class="medium">Sora: My Impressions</a></p>
+            </section>
+            <!--
+            <section class="area">
+                <h1 class="title">Contact</h1>
+                <iframe src="https://lumalabs.ai/embed/22af27d9-5967-4a58-b946-27337b6cd112?mode=slf&background=%23ffffff&color=%23000000&showTitle=false&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" width="889" height="500" frameborder="0" title="luma embed" style="border: none;" class="luma"></iframe>
+            </section>
+        -->
+          <section class="area">
+              <h1 class="title">Contact</h1>
+              <p><a href="mailto:sean.dev980@gmail.com" class="email">email</a></p>
+          </section>
+        </div>
+	</body>
+</html>
