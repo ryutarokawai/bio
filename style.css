@@ -71,7 +71,10 @@ a {
     color: pink;
     text-decoration: underline;
 }
-
+.click {
+    color: pink;
+    text-decoration: underline;
+}
 .luma {
     width: 100%; /* iframeの幅をセクションの幅に合わせる */
     height: 100%; /* iframeの高さをセクションの高さに合わせる */
